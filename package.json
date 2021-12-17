@@ -2,12 +2,13 @@
   "name": "nextjs-spa",
   "author": "C. Lewis <ctj.lewis@icloud.com>",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "engines": {
     "node": ">=14"
   },
   "scripts": {
+    "clean": "rm -rf dist",
     "preboot": "yarn clean",
     "boot": "tsc && rollup -c --silent",
     "bootstrap": "yarn boot && yarn build",
@@ -39,7 +40,7 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@tszip/tszip": "^1.15.3",
+    "@tszip/tszip": "^1.16.0",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "husky": "^7.0.4",
